@@ -1,0 +1,47 @@
+.footer
+	position: fixed
+	z-index: 99
+	left: 0
+	bottom: 0
+	width: 100%
+	backdrop-filter: blur(6px)
+	background: rgba(255, 255, 255, 0.9)
+	&__grid
+		width: 100%
+		display: grid
+		grid-template-columns: repeat(4,1fr)
+		grid-gap: 8px
+		align-items: flex-start
+	&__link
+		display: block
+		text-align: center
+		margin-right: 8px
+		border-top: 2px solid transparent
+		fill: #4f4f4f
+		color: #4f4f4f
+		transition: $transition
+		padding-top: 7px
+		padding-bottom: 9px
+		text-decoration: none
+		font-weight: 600
+		font-size: 12px
+		line-height: 14px
+		letter-spacing: 0.1px
+		&.is-active,
+		&:hover
+			color: #cd2026
+			fill: #cd2026
+			border-color: #cd2026
+		&-icon
+			width: 24px
+			height: 24px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 auto
+			margin-bottom: 6px
+			font-size: 0
+			line-height: 0
+			svg,img
+				width: 100%
+				height: auto

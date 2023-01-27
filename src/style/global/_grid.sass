@@ -1,0 +1,113 @@
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #505050
+	opacity: 1
+	transition: opacity .25s
+
+*:focus::-webkit-input-placeholder
+	opacity: 0
+
+*:-moz-placeholder
+	color: #505050
+	opacity: 1
+	transition: opacity .25s
+
+*:focus::-moz-placeholder
+	opacity: 0
+
+*::-moz-placeholder
+	color: #505050
+	opacity: 1
+	transition: opacity .25s
+
+*:focus:-moz-placeholder
+	opacity: 0
+
+*:-ms-input-placeholder
+	color: #505050
+	opacity: 1
+	transition: opacity .25s
+
+*:focus:-ms-input-placeholder
+	opacity: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #505050
+body input:required:valid,
+body textarea:required:valid
+	color: #505050
+
+*, body
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	-webkit-focus-ring-color: rgba(0,0,0,0)
+	outline: none
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+h1,h2,h3,h4,h5,h6
+	font-size: 1em
+	font-weight: normal
+	margin: 0
+
+.container
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	max-width: 768px
+	margin: 0 auto
+	padding: 0 15px
+
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	overflow: hidden
+	background-color: #fbfbfb
+	padding-top: 74px
+	padding-bottom: 74px
+
+.title
+	letter-spacing: 0.1px
+	font-weight: 700
+	font-size: 20px
+	line-height: 24px
+	margin-right: 10px
+	&__top
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 12px
+		width: 100%
+	&__more
+		color: #007dff
+		letter-spacing: 0.1px
+		font-size: 14px
+		line-height: 17px
+		text-decoration: none
+		transition: $transition
+		&:hover,
+		&:focus-visible
+			color: #cd2026
+
+.main
+	flex: 1

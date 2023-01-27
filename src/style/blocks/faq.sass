@@ -1,0 +1,38 @@
+.faq
+	margin-bottom: 25px
+	&__list
+		width: 100%
+	&__item
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+		&.is-open
+			.faq__arrow
+				transform: rotate(180deg)
+	&__quest
+		padding: 10px 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+	&__title
+		letter-spacing: 0.1px
+		font-size: 18px
+		line-height: 22px
+	&__arrow
+		fill: none
+		stroke: #d5d5d5
+		transition: $transition
+		font-size: 0
+		line-height: 0
+	&__answer
+		letter-spacing: 0.1px
+		line-height: 17px
+		font-size: 14px
+		color: #6b6b6b
+		display: none
+		p
+			margin: 0
+			margin-bottom: 17px
+			&:last-child
+				margin-bottom: 0
